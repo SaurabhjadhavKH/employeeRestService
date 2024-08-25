@@ -26,5 +26,5 @@ eureka:
 info:
   app:
     name: "employeerestservice"
-    description: "Employee Rest Application"
+    description: "Employee Master Data Rest Application"
     version: "1.0.0"
