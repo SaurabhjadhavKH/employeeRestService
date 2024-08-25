@@ -1,0 +1,30 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: employeeRestService
+  datasource:
+    url: jdbc:mysql://localhost:3306/employee_directory
+    username: employee
+    password: employee
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+
+info:
+  app:
+    name: "employeerestservice"
+    description: "Employee Rest Application"
+    version: "1.0.0"
